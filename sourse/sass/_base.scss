@@ -91,19 +91,7 @@ body {
 	}
 }
 
-.main-wrapper { 
-	position: relative;
-	width: 100%;
-	overflow: hidden;
-	// display: flex;
-	// flex-direction: row; 
-// /	overflow: scroll;
-	// width: 100%; 
-	// height: 100vh;
-	// height: calc(var(--vh, 1vh) * 100);
-	
-	
-}
+
 // .main-wrapper__inner{
 // 	// overflow-x: hidden;
 // 	display: flex;
@@ -486,4 +474,124 @@ iframe {
 .swiper-wrapper{
 	
 	// @include row-sw(10px, sm, 100px);
+}
+
+
+body{
+	// background-color: $dark;
+	background: #1E1E1E;
+}
+.text-end{
+	text-align: right;
+}
+.center-block {
+	&__close{
+		display: inline-block;
+		margin-bottom: 8px;
+		position: absolute;
+		right: 15px;
+		top: 15px;
+
+	}
+	position: relative;
+	max-width: 360px;
+	margin-left: auto;
+	margin-right: auto;background: #F8FCFC;
+	padding: 30px 40px;
+	// height: 100vh;
+	height: 640px;
+	&--space-between{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	
+	&--center{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	&__head{
+		text-align: center; 
+	}
+	&__footer{ 
+		text-align: center;
+	}
+	&__body{
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+}
+.h1{
+	text-align: center;
+	color: $cyan;
+	margin-bottom: rem(20);
+	font-weight: bold;
+}
+.btn{
+	margin-bottom: 10px;
+}
+.w-100{
+	width: 100%;
+}
+
+.btn-primary{
+	color: #fff !important;
+	font-weight: bold;
+}
+.btn-outline-secondary{
+	--bs-btn-color: #{$body-color};
+	--bs-btn-hover-bg: #{$cyan};
+	--bs-btn-hover-border-color: #{$cyan};
+	--bs-btn-hover-color: #fff;
+	
+	--bs-btn-active-bg: #{$cyan};
+	--bs-btn-active-border-color: #{$cyan};
+	--bs-btn-active-color: #fff; 
+}
+
+
+.main-wrapper { 
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	
+	// display: flex;
+	// flex-direction: row; 
+// /	overflow: scroll;
+	// width: 100%; 
+	// height: 100vh;
+	// height: calc(var(--vh, 1vh) * 100);
+	
+	
+}
+.p-large{
+	margin-left: -20px;
+	margin-right: -20px;
+
+}
+
+
+.btn,
+.form-control{
+	box-shadow: none !important;
+}
+
+.btn-center{
+	// display: flex;
+	padding-left: 60px;
+	padding-right: 60px;
+	position: relative;
+	font-weight: bold;
+	img{
+		@include a-cent1(y); 
+		left: 15px;
+	}
+
 }

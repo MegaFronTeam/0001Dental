@@ -1,0 +1,30 @@
+extends ../layout/main.pug
+
+//- include ../blocks/header/_header.pug
+//- include ../blocks/topLine/_topLine.pug
+//- include ../blocks/top-nav/_top-nav.pug 
+//- include ../blocks/headerBlock/_headerBlock.pug
+//- include ../blocks/sForm/_sForm.pug
+//- include ../blocks/sContent/_sContent.pug
+ 
+//- include ../blocks/sContact/_sContact.pug
+//- include ../blocks/sForm/_sForm.pug
+//- include ../blocks/sForm/_sForm.pug
+//- include ../blocks/footer/_footer.pug
+
+block variables
+	- let  mainPage= 'main-page' 
+	- let  bg= null
+
+block title
+	- let  title= 3
+	title= title
+block pagecontent
+	//- +mob-mnu()
+	+b.center-block--center
+		//- .text-end
+		+e.close(href="#")
+			<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M16 1.6L14.4 0L8 6.4L1.6 0L0 1.6L6.4 8L0 14.4L1.6 16L8 9.6L14.4 16L16 14.4L9.6 8L16 1.6Z" fill="#191C1F"/>
+				</svg>
+		.h1 Ваша претензия успешно отправлена! 

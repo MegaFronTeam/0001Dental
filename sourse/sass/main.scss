@@ -34,8 +34,8 @@ $output-bourbon-deprecation-warnings: false;
 @import "./node_modules/bootstrap/scss/reboot";
 @import "./node_modules/bootstrap/scss/type";
 // @import "./node_modules/bootstrap/scss/images";
-@import "./node_modules/bootstrap/scss/containers";
-@import "./node_modules/bootstrap/scss/grid";
+// @import "./node_modules/bootstrap/scss/containers";
+// @import "./node_modules/bootstrap/scss/grid";
 // @import "./node_modules/bootstrap/scss/tables";
 @import "./node_modules/bootstrap/scss/forms";
 @import "./node_modules/bootstrap/scss/buttons";
@@ -63,10 +63,10 @@ $output-bourbon-deprecation-warnings: false;
 // @import "./node_modules/bootstrap/scss/placeholders";
 
 // Helpers
-@import "./node_modules/bootstrap/scss/helpers";
+// @import "./node_modules/bootstrap/scss/helpers";
 
 // Utilities
-@import "./node_modules/bootstrap/scss/utilities/api";
+// @import "./node_modules/bootstrap/scss/utilities/api";
 // scss-docs-end import-stack
 
 // .breadcrumb {
@@ -100,8 +100,8 @@ $output-bourbon-deprecation-warnings: false;
 @import "root";
 @import "base";
 
-@import '../pug/blocks/**/*.scss';
-// @import '../pug/blocks/form-wrap/form-wrap.scss';
+// @import '../pug/blocks/**/*.scss';
+@import '../pug/blocks/form-wrap/form-wrap.scss';
 
 // @import '../pug/blocks/topLine/_topLine.scss';
 // @import '../pug/blocks/top-nav/_top-nav.scss';

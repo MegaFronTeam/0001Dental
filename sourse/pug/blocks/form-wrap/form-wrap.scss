@@ -1,7 +1,11 @@
 .form-wrap{
  	&__input-wrap{
 			// @extend .form-group;
+			margin-bottom: rem(20);
 			
+		}
+		textarea{
+			min-height: 90px;
 		}
 		&__input{
 			// @extend .form-control;
@@ -15,8 +19,15 @@
  		width: 100%;
  		display: block;
  	}
+	&__input-title{
+		font-weight: bold;
+		display: block;
+		margin-bottom: 12px;
+	}
 }
-
+.text-center{
+	text-align: center;
+}
 
 .parsley-error{
 	border-image: none;

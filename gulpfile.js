@@ -252,9 +252,11 @@ function startwatch() {
 }
 
 export let imgAll = series(cleanimg, img) 
-export let libs = series(cleanlibs, copyLibs)
+// export let libs = series(cleanlibs, copyLibs)
 export let sprite = series(svg, svgCopy)
 
 
 
-export default series(common, libs, styles,cleanFolders, imgAll, sprite, pugFiles, parallel(browsersync, startwatch))
+export default series(common, 
+    // libs,
+     styles,cleanFolders, imgAll, sprite, pugFiles, parallel(browsersync, startwatch))

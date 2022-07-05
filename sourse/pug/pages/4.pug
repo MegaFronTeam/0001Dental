@@ -1,0 +1,46 @@
+extends ../layout/main.pug
+
+//- include ../blocks/header/_header.pug
+//- include ../blocks/topLine/_topLine.pug
+//- include ../blocks/top-nav/_top-nav.pug 
+//- include ../blocks/headerBlock/_headerBlock.pug
+//- include ../blocks/sForm/_sForm.pug
+//- include ../blocks/sContent/_sContent.pug
+ 
+//- include ../blocks/sContact/_sContact.pug
+//- include ../blocks/sForm/_sForm.pug
+//- include ../blocks/sForm/_sForm.pug
+//- include ../blocks/footer/_footer.pug
+
+block variables
+	- let  mainPage= 'main-page' 
+	- let  bg= null
+
+block title
+	- let  title= 4
+	title= title
+block pagecontent
+	//- +mob-mnu()
+	+b.center-block
+		//- .text-end
+		+e.close(href="#")
+			<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M16 1.6L14.4 0L8 6.4L1.6 0L0 1.6L6.4 8L0 14.4L1.6 16L8 9.6L14.4 16L16 14.4L9.6 8L16 1.6Z" fill="#191C1F"/>
+				</svg>
+
+		+e.body
+			.h1 Оставить отзыв
+			p.text-center.p-large Рады, что вам все понравилось! Мы ценим ваше мнение и будем благодарны, если вы поделитесь им.
+
+			p.text-center.p-large Чтобы оставить отзыв, выберите одну из площадок ниже и нажмите на нее.
+			+e.btns
+				mixin btn(i,t,a="#") 
+					a.btn.btn-center.btn-outline-secondary.w-100(href= a)
+						img(src=`img/btn-${i}`, alt="")
+						span=  t
+				+btn(`1.png`,`ПроДокторов`)
+				+btn(`2.svg`,`Яндекс Карты`)
+				+btn(`3.svg`,`Google Maps`)
+				+btn(`4.svg`,`2GIS`)
+				+btn(`5.svg`,`Yell`)
+				+btn(`6.png`,`Zoon`)
